@@ -13,7 +13,7 @@ exports.handler = async function(event, context) {
   const { path, httpMethod, queryStringParameters } = event;
 
   // Check for Basic Authentication
-  const authHeader = headers.authorization;
+  const authHeader = event.headers.authorization;
   if (!authHeader) {
     return {
       statusCode: 401,

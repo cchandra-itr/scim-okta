@@ -6,8 +6,8 @@ const axios = require('axios');
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 
-const apiUrl = process.env.API_URL_USERS
-const apiKey = process.env.API_KEY_USERS
+const apiUrl = process.env.API_URL_ENTITLEMENTS
+const apiKey = process.env.API_KEY_ENTITLEMENTS
 
 exports.handler = async function(event, context) {
   const { path, httpMethod, queryStringParameters } = event;
